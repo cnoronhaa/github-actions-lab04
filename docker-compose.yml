@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    image: ${DOCKERHUB_USERNAME:-local}/webacademy-lab04:latest
+    ports:
+      - "8080:8080"
